@@ -59,11 +59,15 @@ a {
         transition-timing-function: ease-out;
        }
 
-       &:hover, &:focus, &:active {
+       &:hover,
+       &:focus,
+       &:active {
         color: $light-color;
        }
 
-       &:hover:before, &:focus:before, &:active:before {
+       &:hover:before,
+       &:focus:before,
+       &:active:before {
         transform: scaleX(1);
        }
 }
@@ -91,6 +95,12 @@ a {
        .fab:hover {
            transform: scale(1.1);
        }
+    }
+
+    & hr {
+        width: 10%;
+        margin: auto;
+        border: 1px solid black;
     }
 
     & h5 {

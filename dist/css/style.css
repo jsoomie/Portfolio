@@ -131,6 +131,12 @@ a {
           transform: scale(1.1);
 }
 
+.footer hr {
+  width: 10%;
+  margin: auto;
+  border: 1px solid black;
+}
+
 .footer h5 {
   display: -webkit-box;
   display: -ms-flexbox;
