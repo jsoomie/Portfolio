@@ -25,6 +25,40 @@ a {
     @include set-background($dark-color);
     width: 100%;
     height: 5rem;
+
+    .subtitle-dot-left {
+        vertical-align: middle;
+        height: 8px;
+        width: 8px;
+        background-color: $light-color;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .subtitle-dot-mid {
+        vertical-align: middle;
+        height: 8px;
+        width: 8px;
+        background-color: darken($light-color, 25%);
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .subtitle-dot-right {
+        vertical-align: middle;
+        height: 8px;
+        width: 8px;
+        background-color: darken($light-color, 45%);
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+        vertical-align: middle;
+        color: darken($light-color, 25%);
+        letter-spacing: $letter-spacing + 0.5;
+    }
 }
 
 .container {
@@ -76,7 +110,6 @@ a {
 .project-container,
 .contact-container {
     display: none;
-    @include test();
     margin: auto;
     width: 95%;
 }

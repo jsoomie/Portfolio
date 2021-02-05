@@ -38,6 +38,40 @@ a {
   height: 5rem;
 }
 
+.header .subtitle-dot-left {
+  vertical-align: middle;
+  height: 8px;
+  width: 8px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.header .subtitle-dot-mid {
+  vertical-align: middle;
+  height: 8px;
+  width: 8px;
+  background-color: #b5b5b5;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.header .subtitle-dot-right {
+  vertical-align: middle;
+  height: 8px;
+  width: 8px;
+  background-color: #828282;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.header .subtitle {
+  font-size: 1.2rem;
+  vertical-align: middle;
+  color: #b5b5b5;
+  letter-spacing: 0.7rem;
+}
+
 .container {
   overflow: auto;
 }
@@ -96,7 +130,6 @@ a {
 .project-container,
 .contact-container {
   display: none;
-  border: 1px solid red;
   margin: auto;
   width: 95%;
 }
