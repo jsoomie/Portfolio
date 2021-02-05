@@ -104,6 +104,9 @@ textarea {
 
 .container {
   overflow: auto;
+  position: relative;
+  min-height: fit-content;
+  padding-bottom: 10rem;
 }
 
 .name-title {
@@ -286,8 +289,7 @@ textarea {
 }
 
 .footer {
-  position: fixed;
-  left: 0;
+  position: absolute;
   bottom: 0;
   width: 100%;
   padding: 1rem;
@@ -515,8 +517,6 @@ textarea {
     width: 100%;
   }
 }
-
-
 
 @media only screen and (max-width: 375px) {
   * {
