@@ -17,6 +17,11 @@ body {
   background-size: cover;
 }
 
+a {
+  text-decoration: none;
+  color: #111;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,15 +40,72 @@ body {
 
 .container {
   overflow: auto;
-  border: 1px solid red;
 }
 
 .main-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border: 1px solid #111;
+  border-bottom: 0;
   padding: 1rem;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.main-button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #5e5e5e;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+.main-button:hover, .main-button:focus, .main-button:active {
+  color: whitesmoke;
+}
+
+.main-button:hover:before, .main-button:focus:before, .main-button:active:before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.contact-container {
+  border-bottom: 1px solid #111;
 }
 
 .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+}
+
+.footer .footer-link-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,9 +115,32 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 1rem;
+  text-shadow: 1px 1px 1px #111;
+}
+
+.footer .footer-link-container .fab {
+  padding: 0.5rem 1rem;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.footer .footer-link-container .fab:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.footer h5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #111;
 }
