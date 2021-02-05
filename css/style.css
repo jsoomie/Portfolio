@@ -453,6 +453,70 @@ textarea {
   }
 }
 
+@media only screen and (max-width: 430px) {
+  * {
+    text-shadow: 1px 1px black;
+    font-size: 1rem;
+  }
+  body {
+    margin-bottom: 10rem;
+  }
+  p {
+    text-align: center;
+  }
+  ul {
+    text-align: center;
+  }
+  img {
+    display: none;
+  }
+  footer {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .about-container,
+  .project-container,
+  .contact-container {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 90%;
+    color: white;
+  }
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 4rem 1rem 3rem 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about-container .photo {
+    float: none;
+    width: 300px;
+  }
+  .contact-container {
+    width: 90%;
+  }
+  .card-forms {
+    width: 100%;
+  }
+}
+
+
 
 @media only screen and (max-width: 375px) {
   * {
