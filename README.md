@@ -6,8 +6,12 @@ To update existing portfolio, but instead, I created a new portfolio page from s
 ---
 
 ## Links
-[Link to github](https://github.com/sksmejn/Portfolio)  
-[Link to Portfolio](https://sksmejn.github.io/Portfolio/)
+- New Links  
+    - [Link to GitHub](https://github.com/sksmejn/Portfolio)  
+    - [Link to Portfolio](https://sksmejn.github.io/Portfolio/)  
+- Old Links  
+    - [Link to old Porfolio GitHub](https://github.com/sksmejn/hw2-responsivePage)  
+    - [Link to old Portfolio Page](https://sksmejn.github.io/hw2-responsivePage/)
 
 ---
 ## Screenshots
