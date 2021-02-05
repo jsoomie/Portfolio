@@ -71,9 +71,14 @@ a {
        }
 }
 
-.about-append {
-    width: 100%;
-    padding: 2rem;
+
+.about-container,
+.project-container,
+.contact-container {
+    display: none;
+    @include test();
+    margin: auto;
+    width: 95%;
 }
 
 .footer {
@@ -109,4 +114,5 @@ a {
         text-shadow: 1px 1px 1px $dark-color;
     }
 }
+
 

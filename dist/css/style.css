@@ -92,9 +92,13 @@ a {
           transform: scaleX(1);
 }
 
-.about-append {
-  width: 100%;
-  padding: 2rem;
+.about-container,
+.project-container,
+.contact-container {
+  display: none;
+  border: 1px solid red;
+  margin: auto;
+  width: 95%;
 }
 
 .footer {
