@@ -24,6 +24,11 @@ a {
 
 p {
   font-size: 1.2rem;
+  margin: 1rem;
+}
+
+li {
+  list-style-type: none;
 }
 
 .header {
@@ -78,6 +83,18 @@ p {
 
 .container {
   overflow: auto;
+}
+
+.name-title {
+  font-size: 1.8rem;
+}
+
+.about-myself {
+  font-size: 1.8rem;
+}
+
+.inner-hr {
+  border: 1px solid #777777;
 }
 
 .main-button {
@@ -136,8 +153,59 @@ p {
 .contact-container {
   display: none;
   margin: auto;
-  width: 95%;
-  padding-bottom: 1rem;
+  width: 98.5%;
+  padding: 1rem;
+  background-color: rgba(245, 245, 245, 0.1);
+}
+
+.about-container {
+  margin: 1rem;
+  margin-bottom: 2rem;
+}
+
+.about-container .photo {
+  margin-right: 1.5rem;
+  border: 2px solid #515151;
+  border-radius: 5px;
+  float: left;
+}
+
+.project-container {
+  margin: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-container {
+  margin: 1rem;
+  margin-bottom: 2rem;
+}
+
+.clearfix {
+  content: "";
+  clear: both;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.row .card {
+  padding: 1rem;
+}
+
+.row .card .card-title {
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+}
+
+.row .card .card-footer {
+  font-size: 1.1rem;
 }
 
 .active {
@@ -149,8 +217,8 @@ p {
 
 .inactive {
   letter-spacing: 0.2rem;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .footer {

@@ -22,6 +22,11 @@ a {
 
 p {
     font-size: 1.2rem;
+    margin: 1rem;
+}
+
+li {
+    list-style-type: none;
 }
 
 .header {
@@ -67,6 +72,18 @@ p {
 
 .container {
     overflow: auto;
+}
+
+.name-title {
+    font-size: 1.8rem;
+}
+
+.about-myself {
+    font-size: 1.8rem;
+}
+
+.inner-hr {
+    border: 1px solid lighten($dark-color, 40%);
 }
 
 .main-button {
@@ -116,8 +133,55 @@ p {
 .contact-container {
     display: none;
     margin: auto;
-    width: 95%;
-    padding-bottom: 1rem;
+    width: 98.5%;
+    padding: 1rem;
+    background-color: rgba(245, 245, 245, 0.1);
+}
+
+.about-container {
+    margin:1rem;
+    margin-bottom: 2rem;
+
+    .photo {
+        margin-right: 1.5rem;
+        border: 2px solid lighten($dark-color, 25%);
+        border-radius: 5px;
+        float: left;
+    }
+}
+
+.project-container {
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-container {
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+.clearfix {
+    content: "";
+    clear: both;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .card {
+        padding: 1rem;
+
+        .card-title {
+            font-size: 1.2rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .card-footer {
+            font-size: 1.1rem;
+        }
+    }
 }
 
 .active {
@@ -128,7 +192,7 @@ p {
 
 .inactive {
     letter-spacing: $letter-spacing;
-    transition: 1s;
+    transition: 0.4s;
 }
 
 .footer {
