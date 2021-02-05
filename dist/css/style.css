@@ -22,6 +22,10 @@ a {
   color: #111;
 }
 
+p {
+  font-size: 1.2rem;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,7 +42,14 @@ a {
   height: 5rem;
 }
 
-.header .subtitle-dot-left {
+.header .subtitle {
+  font-size: 1.2rem;
+  vertical-align: middle;
+  color: #b5b5b5;
+  letter-spacing: 0.7rem;
+}
+
+.subtitle-dot-left {
   vertical-align: middle;
   height: 8px;
   width: 8px;
@@ -47,29 +58,22 @@ a {
   display: inline-block;
 }
 
-.header .subtitle-dot-mid {
+.subtitle-dot-mid {
   vertical-align: middle;
   height: 8px;
   width: 8px;
-  background-color: #b5b5b5;
+  background-color: #cfcfcf;
   border-radius: 50%;
   display: inline-block;
 }
 
-.header .subtitle-dot-right {
+.subtitle-dot-right {
   vertical-align: middle;
   height: 8px;
   width: 8px;
-  background-color: #828282;
+  background-color: #9c9c9c;
   border-radius: 50%;
   display: inline-block;
-}
-
-.header .subtitle {
-  font-size: 1.2rem;
-  vertical-align: middle;
-  color: #b5b5b5;
-  letter-spacing: 0.7rem;
 }
 
 .container {
@@ -80,6 +84,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: #444444;
   border-bottom: 0;
   padding: 1.5rem 3rem;
   vertical-align: middle;
@@ -132,6 +137,20 @@ a {
   display: none;
   margin: auto;
   width: 95%;
+  padding-bottom: 1rem;
+}
+
+.active {
+  letter-spacing: 1.2rem;
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: whitesmoke;
+}
+
+.inactive {
+  letter-spacing: 0.2rem;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .footer {
