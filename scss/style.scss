@@ -29,4 +29,14 @@ body {
 
 .main-button {
     @include add-border();
+    padding: 1rem;
+}
+
+.footer {
+    @include center();
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
 }
