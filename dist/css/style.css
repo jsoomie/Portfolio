@@ -247,13 +247,42 @@ textarea {
 }
 
 .card-forms .form-group {
-  border: 1px solid red;
   max-width: 50rem;
 }
 
-.card-forms .message,
-.card-forms .email {
+.card-forms .form-group .message,
+.card-forms .form-group .email {
   padding: 0.5rem;
+}
+
+.card-forms .form-group .submit-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  border: 1px solid #111;
+  border-top: none;
+  border-bottom: 0;
+  padding: 0.5rem;
+  width: 5rem;
+  background-color: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card-forms .form-group .submit-button:hover {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: rgba(240, 240, 240, 0.2);
+  letter-spacing: 0.5rem;
+  width: 8rem;
+  border-radius: 5px;
 }
 
 .footer {

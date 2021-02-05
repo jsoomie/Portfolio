@@ -220,17 +220,34 @@ textarea {
     padding: 1rem;
 
     .form-group {
-        @include test();
         max-width: 50rem;
-    }
 
-    .message,
-    .email {
-        padding: 0.5rem;
+        .message,
+        .email {
+            padding: 0.5rem;
+        }
+
+        .submit-button {
+            @include center();
+            margin: auto;
+            border: 1px solid $dark-color;
+            border-top: none;
+            border-bottom: 0;
+            padding: 0.5rem;
+            width: 5rem;
+            background-color: transparent;
+            transition: 0.5s;
+
+            &:hover {
+                transition: 0.5s ease-in-out;
+                background-color:rgba(240, 240, 240, 0.2);
+                letter-spacing: $letter-spacing + 0.3;
+                width: 8rem;
+                border-radius: 5px;
+            }
+        }
     }
 }
-
-
 
 .footer {
     position: fixed;
