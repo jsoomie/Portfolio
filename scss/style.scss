@@ -1,0 +1,32 @@
+@import "config";
+
+* {
+    @include reset();
+    letter-spacing: $letter-spacing;
+}
+
+body {
+    font-family: $font-stack;
+    line-height: $line-height;
+    color: set-text-color($light-color);
+    background-image: url("../img/my-photo.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.header {
+    @include center();
+    @include set-background($dark-color);
+    width: 100%;
+    height: 5rem;
+}
+
+.container {
+    overflow: auto;
+    @include test();
+}
+
+.main-button {
+    @include add-border();
+}

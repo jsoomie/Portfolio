@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap');
+
+// Variables
+$light-color: whitesmoke;
+$dark-color: #111;
+
+// Default Parameters
+$font-stack: 'Fira Sans', sans-serif;
+$line-height: 1.6;
+$font-size: 1rem;
+$letter-spacing: 0.2rem;
+
+// TESTING ONLY
+@mixin test() {
+    border: 1px solid red;
+}
+
+// Set text color based on background
+@function set-text-color($color) {
+    @if(lightness($color) > 70) {
+        @return $dark-color;
+    } @else {
+        @return $light-color;
+    }
+ }
+
+ // Resets
+ @mixin reset() {
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+ }
+
+ // Set Bacgkround and text color
+ @mixin set-background($color) {
+    background-color: $color;
+    color: set-text-color($color);
+ }
+
+ // Adding borders to buttons
+ @mixin add-border() {
+     border: 1px solid $dark-color;
+ }
+
+ // Flexbox center horizontal and vertical
+ @mixin center() {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
