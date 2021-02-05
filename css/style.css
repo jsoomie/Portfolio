@@ -295,6 +295,11 @@ textarea {
   padding: 1rem;
 }
 
+footer {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: whitesmoke;
+}
+
 .footer .footer-link-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -309,6 +314,7 @@ textarea {
 }
 
 .footer .footer-link-container .fab {
+  color: whitesmoke;
   padding: 0.5rem 1rem;
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
   transition: -webkit-transform 0.5s ease-in-out;
