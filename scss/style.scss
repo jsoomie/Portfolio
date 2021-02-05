@@ -29,6 +29,27 @@ li {
     list-style-type: none;
 }
 
+input {
+    border: none;
+    height: 2rem;
+    width: 100%;
+    padding: 0.3rem;
+    letter-spacing: $letter-spacing - 0.1;
+    outline: none;
+    
+    input:focus {
+        outline: none;
+    }
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    letter-spacing: $letter-spacing - 0.1;
+    padding: 0.3rem;
+    outline: none;
+}
+
 .header {
     @include center();
     @include set-background($dark-color);
@@ -193,6 +214,23 @@ li {
     letter-spacing: $letter-spacing;
     transition: 0.4s;
 }
+
+.card-forms {
+    @extend .card;
+    padding: 1rem;
+
+    .form-group {
+        @include test();
+        max-width: 50rem;
+    }
+
+    .message,
+    .email {
+        padding: 0.5rem;
+    }
+}
+
+
 
 .footer {
     position: fixed;

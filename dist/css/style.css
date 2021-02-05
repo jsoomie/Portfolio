@@ -31,6 +31,27 @@ li {
   list-style-type: none;
 }
 
+input {
+  border: none;
+  height: 2rem;
+  width: 100%;
+  padding: 0.3rem;
+  letter-spacing: 0.1rem;
+  outline: none;
+}
+
+input input:focus {
+  outline: none;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  letter-spacing: 0.1rem;
+  padding: 0.3rem;
+  outline: none;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -195,16 +216,16 @@ li {
       flex-wrap: wrap;
 }
 
-.row .card {
+.row .card, .row .card-forms {
   padding: 1rem;
 }
 
-.row .card .card-title {
+.row .card .card-title, .row .card-forms .card-title {
   font-size: 1.2rem;
   padding-bottom: 0.5rem;
 }
 
-.row .card .card-footer {
+.row .card .card-footer, .row .card-forms .card-footer {
   font-size: 1.1rem;
 }
 
@@ -219,6 +240,20 @@ li {
   letter-spacing: 0.2rem;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+.card-forms {
+  padding: 1rem;
+}
+
+.card-forms .form-group {
+  border: 1px solid red;
+  max-width: 50rem;
+}
+
+.card-forms .message,
+.card-forms .email {
+  padding: 0.5rem;
 }
 
 .footer {
